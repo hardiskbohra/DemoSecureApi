@@ -11,15 +11,13 @@ module.exports = function(sequelize, DataTypes){
 			type : DataTypes.STRING(20),
 			allowNull : false,
 			field : 'password',
-			unique : true
 		},
 		name : {
 			type : DataTypes.STRING(20),
 			allowNull : false,
 			field : 'name',
-			unique : true
 		}
-		
+
 	};
 
 	var userConfig = {
@@ -30,7 +28,6 @@ module.exports = function(sequelize, DataTypes){
 		freezeTableName : true,
 		classMethods: {
 			associate : function(models) {
-
 			}
 		}
 	};
